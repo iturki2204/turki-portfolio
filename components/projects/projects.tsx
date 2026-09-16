@@ -22,6 +22,7 @@ type Project = {
   meta: string;
   accent: string;
   imageRatio: number;
+  url: string;
 };
 
 const PROJECTS: Project[] = [
@@ -36,6 +37,7 @@ const PROJECTS: Project[] = [
     meta: "منتج مباشر · almafia.online · 2026",
     accent: "#7f1d2b",
     imageRatio: 4 / 3,
+    url: "https://almafia.online",
   },
   {
     id: "finai",
@@ -47,6 +49,7 @@ const PROJECTS: Project[] = [
     meta: "Next.js + FastAPI · 2026",
     accent: "#8a6d00",
     imageRatio: 4 / 3,
+    url: "https://finai-umber-six.vercel.app",
   },
   {
     id: "cfo-simulator",
@@ -58,6 +61,7 @@ const PROJECTS: Project[] = [
     meta: "قيد التطوير · 2026",
     accent: "#0f6b4f",
     imageRatio: 4 / 3,
+    url: "https://cfo-simulator.vercel.app",
   },
   {
     id: "t1",
@@ -70,6 +74,7 @@ const PROJECTS: Project[] = [
     meta: "بيانات محلية بالكامل · 2026",
     accent: "#332e7a",
     imageRatio: 4 / 3,
+    url: "https://t1-two-dusky.vercel.app",
   },
 ];
 
@@ -136,7 +141,12 @@ function ProjectCard({
       delay={Math.min(index * 0.06, 0.3)}
       className="mb-6 break-inside-avoid md:mb-7"
     >
-      <article className="project-card flex cursor-pointer flex-col gap-4 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5">
+      <Link
+        href={project.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-card focus-ring flex cursor-pointer flex-col gap-4 rounded-3xl border border-foreground/8 bg-background p-3 sm:p-3.5"
+      >
         <header className="flex items-center gap-2.5 px-1 pt-2">
           <span className="border-foreground/10 inline-flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-background">
             {project.logoSrc ? (
@@ -195,7 +205,7 @@ function ProjectCard({
         <p className="px-1 pb-2 text-[12px] tracking-tight text-foreground/50">
           {project.meta}
         </p>
-      </article>
+      </Link>
     </FadeIn>
   );
 }
