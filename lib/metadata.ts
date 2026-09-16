@@ -4,13 +4,13 @@ export const siteConfig = {
   name: "تركي | ملف الأعمال",
   description:
     "مساحة شخصية لعرض المشاريع الرقمية والتجارب والأفكار.",
-  url: "https://example.com",
+  url: "https://turki-portfolio-eight.vercel.app",
   ogImage: "/og-image.png",
   creator: "تركي",
   authors: [
     {
       name: "تركي",
-      url: "https://example.com",
+      url: "https://turki-portfolio-eight.vercel.app",
     },
   ],
   keywords: [
