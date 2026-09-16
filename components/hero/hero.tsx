@@ -4,8 +4,8 @@ import { HeroCtas } from "./hero-ctas";
 import { FadeIn, ScaleUnblur } from "@/components/ui/motion-primitives";
 import { PortraitMorph } from "./portrait-morph";
 
-const PORTRAIT_SRC = "/portrait.svg";
-const PORTRAIT_HOVER_SRC = "/portrait-hover.svg";
+const PORTRAIT_SRC = "/portrait-photo.png";
+const PORTRAIT_HOVER_SRC = "/portrait-photo.png";
 
 export function Hero(): ReactNode {
   return (
@@ -37,7 +37,7 @@ export function Hero(): ReactNode {
                 <PortraitMorph
                   srcA={PORTRAIT_SRC}
                   srcB={PORTRAIT_HOVER_SRC}
-                  alt="رسم تجريدي يمثل تركي"
+                  alt="الصورة الشخصية لتركي"
                 />
               </div>
             </div>
