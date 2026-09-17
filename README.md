@@ -1,6 +1,8 @@
-# Portfolio Template
+# تركي — Personal Portfolio
 
-A Next.js 16+ personal portfolio template built around a signature WebGL flow shader, a magnetic morphing portrait, Lenis smooth scroll, and a calm black-and-white design system. Designed for individual designers and engineers who want a brand-ready scaffold with a distinctive look on day one.
+Turki's personal portfolio, built on a Next.js 16+ template with a signature WebGL flow shader, a magnetic morphing portrait, Lenis smooth scroll, and a calm black-and-white design system.
+
+Live at [turki-portfolio-eight.vercel.app](https://turki-portfolio-eight.vercel.app).
 
 ## Features
 
@@ -11,8 +13,8 @@ A Next.js 16+ personal portfolio template built around a signature WebGL flow sh
 - ✅ **Motion** via motion/react with reduced-motion support
 - ✅ **WebGL Flow Shader** — aspect-correct circular fade baked into the fragment, theme-aware bg sync
 - ✅ **Lenis Smooth Scroll** with anchor-link integration
-- ✅ **Portrait Morph** — hover-driven webp swap with magnetic cursor follow
-- ✅ **Polaroid Strip, Skills, Stack, Experience, Education** — co-located content sections for an `/about` route
+- ✅ **Portrait Morph** — hover-driven image swap with magnetic cursor follow
+- ✅ **Polaroid Strip, Skills, Stack, Project Timeline** — co-located content sections for an `/about` route
 - ✅ **Projects Grid** — dribbble-style mockup cards with hover lift and image zoom
 - ✅ **Contact Card** — single-click copy email with hover content swap, embedded shader
 - ✅ **Animated Pill Nav** — spring-animated active indicator, hydration-safe theme toggle
@@ -25,8 +27,8 @@ A Next.js 16+ personal portfolio template built around a signature WebGL flow sh
 
 - **Nav** — Fixed pill nav with spring-animated active indicator and hydration-safe theme toggle
 - **Hero** — WebGL flow shader backdrop, two-line headline, morphing portrait, magnetic CTAs
-- **Projects** — Grid of dribbble-style project cards with hover lift, image zoom, and external links
-- **About** — Polaroid strip, skills grid, interactive Matter.js stack chips, expandable experience timeline, education list
+- **Projects** — Grid of project cards linking out to each live product, with hover lift and image zoom
+- **About** — Polaroid strip, skills grid, interactive Matter.js stack chips, expandable project timeline
 - **Contact Card** — Embedded shader, copy-to-clipboard email, secondary social CTAs
 - **Page Backdrop** — Site-wide flow shader, mobile-attenuated, baked radial fade to background
 - **Skip-to-Content** — Keyboard-first accessibility entry point
@@ -75,8 +77,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 │   └── apple-icon.svg               # Apple touch icon
 ├── components/
 │   ├── about/
-│   │   ├── education.tsx            # Education list with bordered logo squares
-│   │   ├── experience.tsx           # Expandable timeline with fade-mask collapse
+│   │   ├── experience.tsx           # Expandable project timeline with fade-mask collapse
 │   │   ├── polaroid-strip.tsx       # Tilted polaroid photos with dotted backs
 │   │   ├── skills.tsx               # Skills grid
 │   │   └── stack.tsx                # Matter.js physics-driven tech chips
@@ -137,12 +138,11 @@ All about-page content is co-located in its component file — there is no separ
 - `components/about/polaroid-strip.tsx` — image paths and captions
 - `components/about/skills.tsx` — skill list
 - `components/about/stack.tsx` — tech logos and physics chips
-- `components/about/experience.tsx` — roles, companies, dates, descriptions
-- `components/about/education.tsx` — schools, programs, dates
+- `components/about/experience.tsx` — project timeline entries, dates, descriptions
 
 ### 4. Update Projects
 
-Edit the project array in `components/projects/projects.tsx`. Each entry includes a title, description, image (dribbble mockup or your own), and external link.
+Edit the project array in `components/projects/projects.tsx`. Each entry includes a title, description, an accent color + logo (or lucide icon fallback), and the live link it opens.
 
 ### 5. Replace Icons
 

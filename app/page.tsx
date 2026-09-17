@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = createMetadata({
-  title: "Home",
-  description: `Welcome to ${siteConfig.name}. ${siteConfig.description}`,
+  title: siteConfig.name,
+  description: "أبني منتجات رقمية عربية من الفكرة إلى الإطلاق — هذا أرشيفها.",
   path: "/",
 });
 
